@@ -1,15 +1,14 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SEPluginTemplate")]
+[assembly: AssemblyTitle("NoLogging")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("WesternGamer")]
-[assembly: AssemblyProduct("SEPluginTemplate")]
+[assembly: AssemblyProduct("NoLogging")]
 [assembly: AssemblyCopyright("Copyright © WesternGamer 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

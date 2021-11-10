@@ -7,8 +7,8 @@
     <ProjectGuid>{606AAA7E-6805-424D-97AF-796456829C4E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SEPluginTemplate</RootNamespace>
-    <AssemblyName>SEPluginTemplate</AssemblyName>
+    <RootNamespace>NoLogging</RootNamespace>
+    <AssemblyName>NoLogging</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -19,9 +19,11 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>
+    </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
@@ -58,7 +60,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
-    <Compile Include="Patches\ExamplePatch.cs" />
+    <Compile Include="Patches\MyLog_WriteLine_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -189,6 +191,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>move $(TargetPath) "[Plugin Folder Location]" &amp; C: &amp; cd "C:\Program Files (x86)\Steam" &amp; steam steam://rungameid/244850</PostBuildEvent>
+    <PostBuildEvent>move $(TargetPath) "D:\Games\steamapps\common\SpaceEngineers\Bin64\Plugins" &amp; C: &amp; cd "C:\Program Files (x86)\Steam" &amp; steam steam://rungameid/244850</PostBuildEvent>
   </PropertyGroup>
 </Project>
